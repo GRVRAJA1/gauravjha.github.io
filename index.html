@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gaurav Kumar | Senior Manager Strategy & Sales Operations</title>
+<title>Gaurav Kumar | Executive Portfolio</title>
 
 <style>
 
@@ -20,23 +20,48 @@ margin:0;
 font-family:monospace;
 background:var(--bg);
 color:var(--text);
+overflow-x:hidden;
+}
+
+/* Loader */
+
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+color:#00ff41;
+font-size:24px;
+z-index:9999;
+animation:fadeOut 1s forwards 2s;
+}
+
+@keyframes fadeOut{
+to{
+opacity:0;
+visibility:hidden;
+}
 }
 
 /* Matrix */
+
 canvas{
 position:fixed;
 top:0;
 left:0;
 z-index:-1;
-opacity:0.12;
+opacity:0.1;
 }
 
 /* Layout */
 
 .container{
-max-width:1100px;
+max-width:1000px;
 margin:auto;
-padding:40px 20px;
+padding:20px;
 }
 
 /* Hero */
@@ -47,87 +72,40 @@ margin-bottom:30px;
 }
 
 .hero img{
-width:160px;
+width:140px;
 border-radius:50%;
 border:3px solid var(--primary);
-box-shadow:0 0 25px var(--primary);
 }
 
-.hero h1{
-color:var(--primary);
-font-size:42px;
-}
+/* Sections */
 
-.hero h2{
-color:var(--secondary);
-}
-
-/* Executive Summary */
-
-.summary{
+.company{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.6s ease;
 border:1px solid var(--primary);
-padding:20px;
-margin-top:30px;
+margin-top:20px;
 background:var(--card);
 }
 
-/* KPI */
-
-.kpi-container{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-margin-top:30px;
-}
-
-.kpi{
-flex:1;
-min-width:200px;
-border:1px solid var(--primary);
-padding:20px;
-text-align:center;
-}
-
-.kpi-number{
-font-size:36px;
-color:var(--primary);
-}
-
-/* Companies */
-
-.company{
-border:1px solid var(--primary);
-margin-top:20px;
+.company.visible{
+opacity:1;
+transform:translateY(0);
 }
 
 .company-header{
-padding:20px;
-cursor:pointer;
-background:var(--card);
 display:flex;
 align-items:center;
 gap:15px;
+padding:15px;
 }
 
 .company-header img{
 width:50px;
 }
 
-.company-body{
-display:none;
-padding:20px;
-border-top:1px solid var(--primary);
-animation:fade 0.4s ease;
-}
-
-@keyframes fade{
-from{opacity:0;}
-to{opacity:1;}
-}
-
-.section-title{
-color:var(--secondary);
-margin-top:15px;
+.section{
+padding:15px;
 }
 
 .tag{
@@ -137,25 +115,13 @@ margin:5px;
 display:inline-block;
 }
 
-.contact{
-border:1px solid var(--primary);
-padding:20px;
-margin-top:30px;
-}
-
-@media(max-width:768px){
-
-.kpi-container{
-flex-direction:column;
-}
-
-}
-
 </style>
 
 </head>
 
 <body>
+
+<div id="loader">Loading Executive Portfolio...</div>
 
 <canvas id="matrix"></canvas>
 
@@ -167,49 +133,10 @@ flex-direction:column;
 
 <h1>GAURAV KUMAR</h1>
 
-<h2>Senior Manager — Strategy & Sales Operations | Global Revenue Operations Leader</h2>
+<h3>Senior Manager — Strategy & Sales Operations</h3>
 
 </div>
 
-
-<div class="summary">
-
-<h3>Executive Summary</h3>
-
-Strategy and Sales Operations leader with 8+ years of experience driving global revenue planning, quota strategy, and RevOps execution across SaaS organizations. Enabled over 700+ sales professionals globally and led revenue operations across India, APAC, North America, and LATAM. Partnered directly with executive leadership, including COO office, to drive scalable revenue growth, operational efficiency, and strategic execution.
-
-</div>
-
-
-<div class="kpi-container">
-
-<div class="kpi">
-<div class="kpi-number" data-target="8">0</div>
-Years Experience
-</div>
-
-<div class="kpi">
-<div class="kpi-number" data-target="700">0</div>
-Sales Professionals Enabled
-</div>
-
-<div class="kpi">
-<div class="kpi-number" data-target="4">0</div>
-Global Regions Managed
-</div>
-
-<div class="kpi">
-<div class="kpi-number" data-target="90">0</div>
-Productivity Improvement %
-</div>
-
-</div>
-
-
-<h2>Executive Experience</h2>
-
-
-<!-- Gupshup -->
 
 <div class="company">
 
@@ -217,57 +144,33 @@ Productivity Improvement %
 
 <img src="https://logo.clearbit.com/gupshup.io">
 
-Senior Manager — Strategy & Sales Operations | Gupshup Technology
+<h3>Gupshup Technology</h3>
 
 </div>
 
-<div class="company-body">
+<div class="section">
 
-<div class="section-title">Global Executive Impact</div>
-
-<ul>
-
-<li>Own Annual Operating Plan (AOP) and revenue planning across India, APAC, North America, and LATAM</li>
-
-<li>Lead quota planning, territory segmentation, and revenue strategy globally</li>
-
-<li>Drive sales compensation planning, incentive design, and gross margin optimization</li>
-
-<li>Manage entire sales tech ecosystem including Salesforce, DealHub, Tableau, and Drivetrain</li>
-
-<li>Partner directly with executive leadership to drive global revenue growth strategy</li>
-
-</ul>
-
-
-<div class="section-title">Strategic Initiatives & Projects</div>
+<h4>Executive Impact</h4>
 
 <ul>
 
-<li>Spearheaded creation of Gupshup Genie AI platform to improve sales productivity and operational efficiency</li>
-
-<li>Designed scalable global forecasting and planning frameworks</li>
-
-<li>Built executive dashboards and reporting frameworks for leadership decision making</li>
+<li>Own global AOP across India, APAC, North America, LATAM</li>
+<li>Built global quota planning frameworks</li>
+<li>Created AI-driven sales productivity systems</li>
+<li>Managed Salesforce, DealHub, Tableau, Drivetrain</li>
 
 </ul>
 
+<h4>Skills & Tools</h4>
 
-<div class="section-title">Skills & Tools</div>
-
-<span class="tag">Global RevOps</span>
 <span class="tag">Salesforce</span>
 <span class="tag">DealHub</span>
-<span class="tag">Tableau</span>
-<span class="tag">Drivetrain</span>
-<span class="tag">Revenue Planning</span>
+<span class="tag">RevOps</span>
 
 </div>
 
 </div>
 
-
-<!-- Healthplix -->
 
 <div class="company">
 
@@ -275,21 +178,16 @@ Senior Manager — Strategy & Sales Operations | Gupshup Technology
 
 <img src="https://logo.clearbit.com/healthplix.com">
 
-Associate Director — Business & Sales Operations | Healthplix Technology
+<h3>Healthplix Technology</h3>
 
 </div>
 
-<div class="company-body">
+<div class="section">
 
 <ul>
 
-<li>Led revenue forecasting, planning, and analytics across enterprise sales teams</li>
-
-<li>Built scalable operational frameworks supporting nationwide sales growth</li>
-
-<li>Partnered with product, finance, and engineering leadership</li>
-
-<li>Enabled leadership visibility via dashboards and reporting</li>
+<li>Led forecasting and revenue planning</li>
+<li>Built operational systems supporting national scale</li>
 
 </ul>
 
@@ -297,8 +195,6 @@ Associate Director — Business & Sales Operations | Healthplix Technology
 
 </div>
 
-
-<!-- Unacademy -->
 
 <div class="company">
 
@@ -306,21 +202,16 @@ Associate Director — Business & Sales Operations | Healthplix Technology
 
 <img src="https://logo.clearbit.com/unacademy.com">
 
-Senior Manager — COO's Office (Chief of Staff Function) | Unacademy
+<h3>Unacademy</h3>
 
 </div>
 
-<div class="company-body">
+<div class="section">
 
 <ul>
 
-<li>Worked directly with COO driving strategic execution and operational scale</li>
-
-<li>Enabled 250+ sales professionals via Salesforce implementation</li>
-
-<li>Improved productivity by 90% via operational optimization</li>
-
-<li>Owned executive dashboards and reporting for leadership</li>
+<li>Worked directly with COO (Chief of Staff role)</li>
+<li>Enabled 250+ sales professionals via Salesforce</li>
 
 </ul>
 
@@ -328,8 +219,6 @@ Senior Manager — COO's Office (Chief of Staff Function) | Unacademy
 
 </div>
 
-
-<!-- Cleartax -->
 
 <div class="company">
 
@@ -337,19 +226,16 @@ Senior Manager — COO's Office (Chief of Staff Function) | Unacademy
 
 <img src="https://logo.clearbit.com/cleartax.in">
 
-Business Program Manager | Cleartax
+<h3>Cleartax</h3>
 
 </div>
 
-<div class="company-body">
+<div class="section">
 
 <ul>
 
-<li>Built dashboards supporting leadership decision making</li>
-
-<li>Led revenue planning and partner operations</li>
-
-<li>Enabled scalable business growth</li>
+<li>Built dashboards supporting leadership</li>
+<li>Led operational planning</li>
 
 </ul>
 
@@ -357,8 +243,6 @@ Business Program Manager | Cleartax
 
 </div>
 
-
-<!-- Johnson Controls -->
 
 <div class="company">
 
@@ -366,30 +250,20 @@ Business Program Manager | Cleartax
 
 <img src="https://logo.clearbit.com/johnsoncontrols.com">
 
-Product Research Engineer | Johnson Controls
+<h3>Johnson Controls</h3>
 
 </div>
 
-<div class="company-body">
+<div class="section">
 
 <ul>
 
-<li>Delivered analytics supporting product strategy</li>
-
-<li>Reduced product cost via strategic optimization</li>
+<li>Delivered product analytics</li>
+<li>Improved cost efficiency</li>
 
 </ul>
 
 </div>
-
-</div>
-
-
-<div class="contact">
-
-Email: grv.raja1@gmail.com<br>
-
-LinkedIn: linkedin.com/in/gaurav-jha-87562366
 
 </div>
 
@@ -399,48 +273,17 @@ LinkedIn: linkedin.com/in/gaurav-jha-87562366
 
 <script>
 
-// Expand companies
+// Sequential reveal
 
-document.querySelectorAll(".company-header").forEach(header=>{
+const companies=document.querySelectorAll(".company");
 
-header.onclick=()=>{
+companies.forEach((company,index)=>{
 
-const body=header.nextElementSibling;
+setTimeout(()=>{
 
-body.style.display=body.style.display==="block"?"none":"block";
+company.classList.add("visible");
 
-};
-
-});
-
-
-// KPI animation
-
-document.querySelectorAll(".kpi-number").forEach(counter=>{
-
-const update=()=>{
-
-const target=+counter.dataset.target;
-
-const count=+counter.innerText;
-
-const inc=target/50;
-
-if(count<target){
-
-counter.innerText=Math.ceil(count+inc);
-
-setTimeout(update,40);
-
-}else{
-
-counter.innerText=target;
-
-}
-
-};
-
-update();
+},500*(index+1));
 
 });
 
@@ -455,7 +298,7 @@ canvas.width=window.innerWidth;
 
 canvas.height=window.innerHeight;
 
-const letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
+const letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 const fontSize=14;
 
@@ -495,7 +338,5 @@ setInterval(draw,35);
 
 </script>
 
-
 </body>
-
 </html>
