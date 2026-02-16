@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Gaurav Kumar | Strategy & Sales Operations Leader</title>
+<title>Gaurav Kumar | Senior Manager Strategy & Sales Operations</title>
 
 <style>
 
@@ -23,16 +22,17 @@ background:var(--bg);
 color:var(--text);
 }
 
-/* Matrix background */
+/* Matrix */
 canvas{
 position:fixed;
 top:0;
 left:0;
 z-index:-1;
-opacity:0.15;
+opacity:0.12;
 }
 
 /* Layout */
+
 .container{
 max-width:1100px;
 margin:auto;
@@ -40,8 +40,10 @@ padding:40px 20px;
 }
 
 /* Hero */
+
 .hero{
 text-align:center;
+margin-bottom:30px;
 }
 
 .hero img{
@@ -60,7 +62,17 @@ font-size:42px;
 color:var(--secondary);
 }
 
-/* KPI counters */
+/* Executive Summary */
+
+.summary{
+border:1px solid var(--primary);
+padding:20px;
+margin-top:30px;
+background:var(--card);
+}
+
+/* KPI */
+
 .kpi-container{
 display:flex;
 flex-wrap:wrap;
@@ -77,70 +89,70 @@ text-align:center;
 }
 
 .kpi-number{
-font-size:32px;
+font-size:36px;
 color:var(--primary);
 }
 
-/* Cards */
-.section{
-margin-top:40px;
-}
+/* Companies */
 
-.card{
+.company{
 border:1px solid var(--primary);
-background:var(--card);
-margin-bottom:15px;
-cursor:pointer;
+margin-top:20px;
 }
 
-.card-header{
-padding:15px;
+.company-header{
+padding:20px;
+cursor:pointer;
+background:var(--card);
 display:flex;
 align-items:center;
 gap:15px;
 }
 
-.card-header img{
-width:40px;
-height:40px;
+.company-header img{
+width:50px;
 }
 
-.card-body{
-padding:15px;
+.company-body{
 display:none;
+padding:20px;
 border-top:1px solid var(--primary);
+animation:fade 0.4s ease;
 }
 
-/* Skills */
-.skills span{
-display:inline-block;
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+.section-title{
+color:var(--secondary);
+margin-top:15px;
+}
+
+.tag{
 border:1px solid var(--primary);
 padding:5px 10px;
 margin:5px;
+display:inline-block;
 }
 
-/* Contact */
 .contact{
 border:1px solid var(--primary);
-padding:15px;
+padding:20px;
+margin-top:30px;
 }
 
-/* Buttons */
-.btn{
-display:inline-block;
-margin-top:10px;
-padding:10px 20px;
-border:1px solid var(--primary);
-color:var(--primary);
-text-decoration:none;
+@media(max-width:768px){
+
+.kpi-container{
+flex-direction:column;
 }
 
-.btn:hover{
-background:var(--primary);
-color:black;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -155,14 +167,19 @@ color:black;
 
 <h1>GAURAV KUMAR</h1>
 
-<h2>Strategy & Sales Operations Leader | Chief of Staff Office</h2>
-
-<a href="resume.pdf" class="btn">Download Resume</a>
+<h2>Senior Manager — Strategy & Sales Operations | Global Revenue Operations Leader</h2>
 
 </div>
 
 
-<!-- KPI Counters -->
+<div class="summary">
+
+<h3>Executive Summary</h3>
+
+Strategy and Sales Operations leader with 8+ years of experience driving global revenue planning, quota strategy, and RevOps execution across SaaS organizations. Enabled over 700+ sales professionals globally and led revenue operations across India, APAC, North America, and LATAM. Partnered directly with executive leadership, including COO office, to drive scalable revenue growth, operational efficiency, and strategic execution.
+
+</div>
+
 
 <div class="kpi-container">
 
@@ -172,13 +189,13 @@ Years Experience
 </div>
 
 <div class="kpi">
-<div class="kpi-number" data-target="250">0</div>
-Sales Users Enabled
+<div class="kpi-number" data-target="700">0</div>
+Sales Professionals Enabled
 </div>
 
 <div class="kpi">
 <div class="kpi-number" data-target="4">0</div>
-Global Regions
+Global Regions Managed
 </div>
 
 <div class="kpi">
@@ -189,146 +206,190 @@ Productivity Improvement %
 </div>
 
 
-<!-- Experience -->
+<h2>Executive Experience</h2>
 
-<div class="section">
 
-<h2>Experience</h2>
+<!-- Gupshup -->
 
-<div class="card">
+<div class="company">
 
-<div class="card-header">
+<div class="company-header">
+
 <img src="https://logo.clearbit.com/gupshup.io">
-Gupshup Technology — Manager, Strategy & Sales Operations
-</div>
 
-<div class="card-body">
-
-Own AOP, quota planning, revenue planning, and CRM ecosystem across global markets.
+Senior Manager — Strategy & Sales Operations | Gupshup Technology
 
 </div>
 
+<div class="company-body">
+
+<div class="section-title">Global Executive Impact</div>
+
+<ul>
+
+<li>Own Annual Operating Plan (AOP) and revenue planning across India, APAC, North America, and LATAM</li>
+
+<li>Lead quota planning, territory segmentation, and revenue strategy globally</li>
+
+<li>Drive sales compensation planning, incentive design, and gross margin optimization</li>
+
+<li>Manage entire sales tech ecosystem including Salesforce, DealHub, Tableau, and Drivetrain</li>
+
+<li>Partner directly with executive leadership to drive global revenue growth strategy</li>
+
+</ul>
+
+
+<div class="section-title">Strategic Initiatives & Projects</div>
+
+<ul>
+
+<li>Spearheaded creation of Gupshup Genie AI platform to improve sales productivity and operational efficiency</li>
+
+<li>Designed scalable global forecasting and planning frameworks</li>
+
+<li>Built executive dashboards and reporting frameworks for leadership decision making</li>
+
+</ul>
+
+
+<div class="section-title">Skills & Tools</div>
+
+<span class="tag">Global RevOps</span>
+<span class="tag">Salesforce</span>
+<span class="tag">DealHub</span>
+<span class="tag">Tableau</span>
+<span class="tag">Drivetrain</span>
+<span class="tag">Revenue Planning</span>
+
+</div>
+
 </div>
 
 
-<div class="card">
+<!-- Healthplix -->
 
-<div class="card-header">
+<div class="company">
+
+<div class="company-header">
+
 <img src="https://logo.clearbit.com/healthplix.com">
-Healthplix — Associate Director, Strategy & Sales Operations
-</div>
 
-<div class="card-body">
-
-Led forecasting, planning, and operational scale.
+Associate Director — Business & Sales Operations | Healthplix Technology
 
 </div>
 
+<div class="company-body">
+
+<ul>
+
+<li>Led revenue forecasting, planning, and analytics across enterprise sales teams</li>
+
+<li>Built scalable operational frameworks supporting nationwide sales growth</li>
+
+<li>Partnered with product, finance, and engineering leadership</li>
+
+<li>Enabled leadership visibility via dashboards and reporting</li>
+
+</ul>
+
+</div>
+
 </div>
 
 
-<div class="card">
+<!-- Unacademy -->
 
-<div class="card-header">
+<div class="company">
+
+<div class="company-header">
+
 <img src="https://logo.clearbit.com/unacademy.com">
-Unacademy — Senior Manager, COO’s Office (Chief of Staff)
-</div>
 
-<div class="card-body">
-
-Worked directly with COO driving strategic execution and CRM implementation.
+Senior Manager — COO's Office (Chief of Staff Function) | Unacademy
 
 </div>
 
+<div class="company-body">
+
+<ul>
+
+<li>Worked directly with COO driving strategic execution and operational scale</li>
+
+<li>Enabled 250+ sales professionals via Salesforce implementation</li>
+
+<li>Improved productivity by 90% via operational optimization</li>
+
+<li>Owned executive dashboards and reporting for leadership</li>
+
+</ul>
+
+</div>
+
 </div>
 
 
-<div class="card">
+<!-- Cleartax -->
 
-<div class="card-header">
+<div class="company">
+
+<div class="company-header">
+
 <img src="https://logo.clearbit.com/cleartax.in">
-Cleartax — Business Program Manager
-</div>
 
-<div class="card-body">
-
-Built dashboards, planning systems, and sales strategy.
+Business Program Manager | Cleartax
 
 </div>
 
+<div class="company-body">
+
+<ul>
+
+<li>Built dashboards supporting leadership decision making</li>
+
+<li>Led revenue planning and partner operations</li>
+
+<li>Enabled scalable business growth</li>
+
+</ul>
+
+</div>
+
 </div>
 
 
-<div class="card">
+<!-- Johnson Controls -->
 
-<div class="card-header">
+<div class="company">
+
+<div class="company-header">
+
 <img src="https://logo.clearbit.com/johnsoncontrols.com">
-Johnson Controls — Product Research Engineer
-</div>
 
-<div class="card-body">
-
-Delivered analytics and product optimization.
+Product Research Engineer | Johnson Controls
 
 </div>
 
-</div>
+<div class="company-body">
 
+<ul>
 
-</div>
+<li>Delivered analytics supporting product strategy</li>
 
+<li>Reduced product cost via strategic optimization</li>
 
-<!-- Skills -->
-
-<div class="section">
-
-<h2>Skills</h2>
-
-<div class="skills">
-
-<span>Salesforce</span>
-<span>DealHub</span>
-<span>Tableau</span>
-<span>Drivetrain</span>
-<span>Clari</span>
-<span>HubSpot</span>
-<span>Revenue Strategy</span>
-<span>Forecasting</span>
+</ul>
 
 </div>
 
 </div>
 
-
-<!-- Education -->
-
-<div class="section">
-
-<h2>Education</h2>
-
-<div class="contact">
-
-National Institute of Technology Agartala<br>
-Bachelor of Technology<br>
-2016
-
-</div>
-
-</div>
-
-
-<!-- Contact -->
-
-<div class="section">
-
-<h2>Contact</h2>
 
 <div class="contact">
 
 Email: grv.raja1@gmail.com<br>
-LinkedIn: linkedin.com/in/gaurav-jha-87562366
 
-</div>
+LinkedIn: linkedin.com/in/gaurav-jha-87562366
 
 </div>
 
@@ -338,9 +399,9 @@ LinkedIn: linkedin.com/in/gaurav-jha-87562366
 
 <script>
 
-// Expand experience
+// Expand companies
 
-document.querySelectorAll(".card-header").forEach(header=>{
+document.querySelectorAll(".company-header").forEach(header=>{
 
 header.onclick=()=>{
 
@@ -355,21 +416,19 @@ body.style.display=body.style.display==="block"?"none":"block";
 
 // KPI animation
 
-const counters=document.querySelectorAll(".kpi-number");
-
-counters.forEach(counter=>{
+document.querySelectorAll(".kpi-number").forEach(counter=>{
 
 const update=()=>{
 
-const target=+counter.getAttribute("data-target");
+const target=+counter.dataset.target;
 
-const current=+counter.innerText;
+const count=+counter.innerText;
 
-const increment=target/50;
+const inc=target/50;
 
-if(current<target){
+if(count<target){
 
-counter.innerText=Math.ceil(current+increment);
+counter.innerText=Math.ceil(count+inc);
 
 setTimeout(update,40);
 
@@ -389,14 +448,19 @@ update();
 // Matrix animation
 
 const canvas=document.getElementById("matrix");
+
 const ctx=canvas.getContext("2d");
 
 canvas.width=window.innerWidth;
+
 canvas.height=window.innerHeight;
 
 const letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
+
 const fontSize=14;
+
 const columns=canvas.width/fontSize;
+
 const drops=[];
 
 for(let i=0;i<columns;i++) drops[i]=1;
@@ -404,9 +468,11 @@ for(let i=0;i<columns;i++) drops[i]=1;
 function draw(){
 
 ctx.fillStyle="rgba(0,0,0,0.05)";
+
 ctx.fillRect(0,0,canvas.width,canvas.height);
 
 ctx.fillStyle="#00ff41";
+
 ctx.font=fontSize+"px monospace";
 
 for(let i=0;i<drops.length;i++){
@@ -416,6 +482,7 @@ const text=letters[Math.floor(Math.random()*letters.length)];
 ctx.fillText(text,i*fontSize,drops[i]*fontSize);
 
 if(drops[i]*fontSize>canvas.height)
+
 drops[i]=0;
 
 drops[i]++;
@@ -428,5 +495,7 @@ setInterval(draw,35);
 
 </script>
 
+
 </body>
+
 </html>
